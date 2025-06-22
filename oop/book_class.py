@@ -25,7 +25,7 @@ class Book:
             This method is called when an object is about to be destroyed.
             It prints a message indicating which book is being deleted.
         """
-        print(f"Deleting book {self.title}")
+        print(f"Deleting {self.title}")
 
     def __str__(self):
         """
