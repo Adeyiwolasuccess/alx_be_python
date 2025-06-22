@@ -26,7 +26,6 @@ class Book:
             It prints a message indicating which book is being deleted.
         """
         print(f"Deleting {self.title}")
-
     def __str__(self):
         """
               Provides a user-friendly string representation of the book instance.
@@ -41,8 +40,5 @@ class Book:
         """
                Provides an official, unambiguous string representation of the Book instance.
                The returned string should be a valid Python expression that can recreate the object.
-
-               Returns:
-                   str: The official representation of the Book instance.
                """
-        return f"Book('{self.title}', '{self.author}', '{self.year}')"
+        return f"Book('{self.title}', '{self.author}', {self.year})"
