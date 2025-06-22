@@ -27,7 +27,7 @@ class Book:
         """
         print(f"Deleting book: {self.title}")
 
-    def __str__(self) -> str:
+    def __str__(self):
         """
               Provides a user-friendly string representation of the book instance.
               This is called by functions like str() and print().
@@ -37,7 +37,7 @@ class Book:
         """
         return f"{self.title} by {self.author}, published in {self.year}"
 
-    def __repr__(self) -> str:
+    def __repr__(self):
         """
                Provides an official, unambiguous string representation of the Book instance.
                The returned string should be a valid Python expression that can recreate the object.
