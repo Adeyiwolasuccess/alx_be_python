@@ -93,7 +93,7 @@ class Library:
         """
         Prints the details of each book currently in the library.
         """
-        print("Books in the Library:")
+        # Removed the "Books in the Library:" print statement
         for book in self.books:
             # The __str__ method of each book object will be called automatically
             # to provide the appropriate string representation.
