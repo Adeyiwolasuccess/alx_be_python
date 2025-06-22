@@ -1,15 +1,48 @@
+# Book_class.py
+
 class Book:
-    def __init__(self, title, author, year):
+    """
+        Represents a book with a title, author, and publication year.
+        This class demonstrates the use if special (magic) methods in python.
+    """
+
+    def __init__(self, title: str, author: str, year: int):
+        """
+        Initializes a new book instance.
+
+        Args:
+            title (str): The title of the Book.
+            author (str): The author of the Book.
+             Year (int): The Year the book was published
+        """
         self.title = title
         self.author = author
         self.year = year
 
     def __del__(self):
-        print(f"Deleting (title of the book)")
+        """
+            Destructor for the Book instance.
+            This method is called when an object is about to be destroyed.
+            It prints a message indicating which book is being deleted.
+        """
+        print(f"Created book: {self.title}")
 
-    def __str__(self):
-        return "(title) by (author), published in (year)"
+    def __str__(self) -> str:
+        """
+              Provides a user-friendly string representation of the book instance.
+              This is called by functions like str() and print().
 
-    def __repr__(self):
-        return f"{self.title}, {self.author}, {self.year}"
+            :return:
+              str: A formatted string showing book details.
+        """
+        return f"{self.title} by {self.author}, published in {self.year}"
 
+    def __repr__(self) -> str:
+        """
+               Provides an official, unambiguous string representation of the Book instance.
+               The returned string should be a valid Python expression that can recreate the object.
+
+               Returns:
+                   str: The official representation of the Book instance.
+               """
+        return f"Book('{self.title}', '{self.author}', '{self.year}')"
