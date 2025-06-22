@@ -25,7 +25,7 @@ class Book:
             This method is called when an object is about to be destroyed.
             It prints a message indicating which book is being deleted.
         """
-        print(f"Deleting book: {self.title}")
+        print(f"Deleting book {self.title}")
 
     def __str__(self):
         """
@@ -34,7 +34,7 @@ class Book:
 
             :return:
               str: A formatted string showing book details.
-        """
+        """gi
         return f"{self.title} by {self.author}, published in {self.year}"
 
     def __repr__(self):
