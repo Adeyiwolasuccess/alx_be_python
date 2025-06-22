@@ -34,7 +34,7 @@ class Book:
 
             :return:
               str: A formatted string showing book details.
-        """gi
+        """
         return f"{self.title} by {self.author}, published in {self.year}"
 
     def __repr__(self):
